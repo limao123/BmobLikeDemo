@@ -1,0 +1,12 @@
+_User:
+username string
+password string
+
+Post:
+title string
+content string
+author Pointer(_User)
+
+Likes
+user Pointer(_User)
+post Pointer(Post)

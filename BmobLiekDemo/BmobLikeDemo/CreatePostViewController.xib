@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatePostViewController">
+            <connections>
+                <outlet property="contentTv" destination="mgo-Gp-etD" id="uRz-38-F1Q"/>
+                <outlet property="titleTf" destination="hyc-8e-So0" id="aTz-Q4-7li"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入帖子标题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyc-8e-So0">
+                    <rect key="frame" x="20" y="70" width="280" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="bdk-6Z-hpA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="帖子内容" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mgo-Gp-etD">
+                    <rect key="frame" x="20" y="104" width="280" height="300"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="ghX-z3-ywy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hyc-8e-So0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="765-5h-2D5"/>
+                <constraint firstAttribute="trailing" secondItem="mgo-Gp-etD" secondAttribute="trailing" constant="20" id="TpJ-zH-e6n"/>
+                <constraint firstItem="hyc-8e-So0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="d4G-bq-anw"/>
+                <constraint firstAttribute="trailing" secondItem="hyc-8e-So0" secondAttribute="trailing" constant="20" id="udU-bt-xWn"/>
+                <constraint firstItem="mgo-Gp-etD" firstAttribute="top" secondItem="hyc-8e-So0" secondAttribute="bottom" constant="4" id="viM-aJ-m0w"/>
+                <constraint firstItem="mgo-Gp-etD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="yxG-pF-DwK"/>
+            </constraints>
+            <point key="canvasLocation" x="295" y="392"/>
+        </view>
+    </objects>
+</document>

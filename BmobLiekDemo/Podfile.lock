@@ -1,0 +1,16 @@
+PODS:
+  - BmobSDK (1.6.5)
+  - MJRefresh (3.0.1)
+  - SVProgressHUD (HEAD based on 2.0-beta)
+
+DEPENDENCIES:
+  - BmobSDK
+  - MJRefresh
+  - SVProgressHUD (HEAD)
+
+SPEC CHECKSUMS:
+  BmobSDK: 9928a9135a3a7823c6d8bd2bcd9baffeb8e6289a
+  MJRefresh: ca22bb7197c4a17a0491763773cd5cb106b2a810
+  SVProgressHUD: c83337f10ed32d701c423d519059a249973c8662
+
+COCOAPODS: 0.39.0
